@@ -18,9 +18,9 @@
     class="grid place-items-center font-['Inter'] transition-[background-color] duration-300 ease-in dark:bg-[#1D1F29]"
   >
     <header
-      class="mx-auto w-full max-w-[26.75rem] rounded-b-[20px] bg-[#F7F9FF] px-[1.563rem] pt-9 pb-[5.25rem] transition-[background-color] duration-300 ease-in dark:bg-[#20222F]"
+      class="mx-auto w-full max-w-[26.75rem] rounded-b-[20px] bg-[#F7F9FF] px-[1.563rem] pt-9 pb-[5.25rem] transition-[background-color] duration-300 ease-in dark:bg-[#20222F] xl:flex xl:max-w-[90rem] xl:items-center xl:justify-between xl:px-[10.313rem] xl:pb-[9.625rem]"
     >
-      <div class="mb-6 flex flex-col items-start gap-1">
+      <div class="mb-6 flex flex-col items-start gap-1 xl:mb-0">
         <h1
           class="text-2xl font-bold leading-[1.813rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
         >
@@ -33,9 +33,9 @@
         </p>
       </div>
       <hr
-        class="mb-4 h-px w-full border-[#848BAB] transition-[border] duration-300 ease-in dark:border-[#333A55]"
+        class="mb-4 h-px w-full border-[#848BAB] transition-[border] duration-300 ease-in dark:border-[#333A55] xl:hidden"
       />
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between xl:gap-[0.813rem]">
         <p
           class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
         >
@@ -50,15 +50,14 @@
           />
           <span
             class="absolute top-0 left-0 h-full w-full cursor-pointer rounded-[12px] bg-[#AEB3CB] duration-[0.4s] before:absolute before:top-[3px] before:right-[4px] before:h-[1.125rem] before:w-[1.125rem] before:rounded-full before:bg-white before:transition-[transform,_background-color] before:duration-[0.4s] peer-checked:bg-gradient-to-tr peer-checked:from-[#40DB82] peer-checked:to-[#388FE7] peer-checked:before:translate-x-[-1.375rem] before:dark:bg-[#252B42]"
-            id="buttonID"
           ></span>
         </label>
       </div>
     </header>
     <main
-      class="mx-auto mb-[2.813rem] mt-[-2.75rem] flex w-[20.375rem] flex-col gap-[2.875rem]"
+      class="mx-auto mb-[2.813rem] mt-[-2.75rem] flex w-[20.375rem] flex-col gap-[2.875rem] xl:w-[69.375rem]"
     >
-      <section class="grid gap-6">
+      <section class="grid gap-6 xl:grid-cols-4 xl:gap-[1.875rem]">
         <div
           class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6 transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
         >
@@ -229,13 +228,15 @@
           </div>
         </div>
       </section>
-      <section class="flex w-full flex-col gap-[1.688rem]">
+      <section class="flex w-full flex-col gap-[1.688rem] xl:gap-6">
         <h2
           class="text-2xl font-bold leading-[1.813rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-white"
         >
           Overview - Today
         </h2>
-        <div class="grid w-full gap-4">
+        <div
+          class="grid w-full gap-4 xl:grid-cols-4 xl:gap-x-[1.875rem] xl:gap-y-6"
+        >
           <div
             class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
