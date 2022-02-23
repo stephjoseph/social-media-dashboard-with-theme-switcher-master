@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
 
     <link
       rel="icon"
@@ -15,33 +14,42 @@
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
   </head>
-  <body class="grid place-items-center font-['Inter']">
+  <body
+    class="grid place-items-center font-['Inter'] transition-[background-color] duration-300 ease-in dark:bg-[#1D1F29]"
+  >
     <header
-      class="mx-auto w-full max-w-[26.75rem] rounded-b-[20px] bg-[#F7F9FF] px-[1.563rem] pt-9 pb-[5.25rem]"
+      class="mx-auto w-full max-w-[26.75rem] rounded-b-[20px] bg-[#F7F9FF] px-[1.563rem] pt-9 pb-[5.25rem] transition-[background-color] duration-300 ease-in dark:bg-[#20222F]"
     >
       <div class="mb-6 flex flex-col items-start gap-1">
         <h1
-          class="text-2xl font-bold leading-[1.813rem] tracking-normal text-[#1D1F29]"
+          class="text-2xl font-bold leading-[1.813rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
         >
           Social Media Dashboard
         </h1>
         <p
-          class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+          class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
         >
           Total Followers: 23,004
         </p>
       </div>
-      <hr class="mb-4 h-px w-full text-[#848BAB]" />
+      <hr
+        class="mb-4 h-px w-full border-[#848BAB] transition-[border] duration-300 ease-in dark:border-[#333A55]"
+      />
       <div class="flex items-center justify-between">
         <p
-          class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+          class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
         >
           Dark Mode
         </p>
         <label class="relative h-6 w-12">
-          <input class="peer h-0 w-0 opacity-0" type="checkbox" id="checkbox" />
+          <input
+            id="themeButton"
+            class="peer h-0 w-0 opacity-0"
+            type="checkbox"
+            id="checkbox"
+          />
           <span
-            class="absolute top-0 left-0 h-full w-full cursor-pointer rounded-[12px] bg-[#AEB3CB] duration-[0.4s] before:absolute before:top-[3px] before:left-[4px] before:h-[1.125rem] before:w-[1.125rem] before:rounded-full before:bg-white before:duration-[0.4s] peer-checked:bg-gradient-to-tr peer-checked:from-[#40DB82] peer-checked:to-[#388FE7] peer-checked:before:translate-x-[1.375rem]"
+            class="absolute top-0 left-0 h-full w-full cursor-pointer rounded-[12px] bg-[#AEB3CB] duration-[0.4s] before:absolute before:top-[3px] before:right-[4px] before:h-[1.125rem] before:w-[1.125rem] before:rounded-full before:bg-white before:transition-[transform,_background-color] before:duration-[0.4s] peer-checked:bg-gradient-to-tr peer-checked:from-[#40DB82] peer-checked:to-[#388FE7] peer-checked:before:translate-x-[-1.375rem] before:dark:bg-[#252B42]"
             id="buttonID"
           ></span>
         </label>
@@ -52,7 +60,7 @@
     >
       <section class="grid gap-6">
         <div
-          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6"
+          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6 transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
         >
           <div class="absolute top-0 left-0 h-1 w-full bg-[#178FF5]"></div>
           <div class="mb-[1.75rem] flex items-center gap-2">
@@ -63,19 +71,19 @@
               />
             </svg>
             <p
-              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D]"
+              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               @nathanf
             </p>
           </div>
           <div class="mb-[1.563rem] flex flex-col gap-[0.563rem] text-center">
             <p
-              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29]"
+              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               1987
             </p>
             <p
-              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D]"
+              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               Followers
             </p>
@@ -92,7 +100,7 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6"
+          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6 transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
         >
           <div class="absolute top-0 left-0 h-1 w-full bg-[#1DA1F2]"></div>
           <div class="mb-[1.75rem] flex items-center gap-2">
@@ -103,19 +111,19 @@
               />
             </svg>
             <p
-              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D]"
+              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               @nathanf
             </p>
           </div>
           <div class="mb-[1.563rem] flex flex-col gap-[0.563rem] text-center">
             <p
-              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29]"
+              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               1044
             </p>
             <p
-              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D]"
+              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               Followers
             </p>
@@ -132,7 +140,7 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6"
+          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6 transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
         >
           <div
             class="absolute top-0 left-0 h-1 w-full bg-gradient-to-tr from-[#DF4896] via-[#EE877E] to-[#FDC366]"
@@ -152,19 +160,19 @@
               />
             </svg>
             <p
-              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D]"
+              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               @realnathanf
             </p>
           </div>
           <div class="mb-[1.563rem] flex flex-col gap-[0.563rem] text-center">
             <p
-              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29]"
+              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               11k
             </p>
             <p
-              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D]"
+              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               Followers
             </p>
@@ -181,7 +189,7 @@
           </div>
         </div>
         <div
-          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6"
+          class="relative flex flex-col items-center overflow-hidden rounded-[5px] bg-[#F1F3FA] pt-8 pb-6 transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
         >
           <div class="absolute top-0 left-0 h-1 w-full bg-[#C4032B]"></div>
           <div class="mb-[1.75rem] flex items-center gap-2">
@@ -192,19 +200,19 @@
               />
             </svg>
             <p
-              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D]"
+              class="text-xs font-bold leading-[0.938rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               Nathan F.
             </p>
           </div>
           <div class="mb-[1.563rem] flex flex-col gap-[0.563rem] text-center">
             <p
-              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29]"
+              class="text-[3.5rem] font-bold leading-[3rem] tracking-[-2px] text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               8239
             </p>
             <p
-              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D]"
+              class="text-xs font-normal uppercase leading-[0.938rem] tracking-[5px] text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
             >
               Subscribers
             </p>
@@ -223,17 +231,17 @@
       </section>
       <section class="flex w-full flex-col gap-[1.688rem]">
         <h2
-          class="text-2xl font-bold leading-[1.813rem] tracking-normal text-[#63687D]"
+          class="text-2xl font-bold leading-[1.813rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-white"
         >
           Overview - Today
         </h2>
         <div class="grid w-full gap-4">
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Page Views
               </p>
@@ -245,7 +253,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               87
             </p>
@@ -263,11 +271,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Likes
               </p>
@@ -279,7 +287,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               52
             </p>
@@ -297,11 +305,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Likes
               </p>
@@ -320,7 +328,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               5462
             </p>
@@ -338,11 +346,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="dark:text-[#8C98C6]transition-[color] text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] duration-300 ease-in"
               >
                 Profile Views
               </p>
@@ -361,7 +369,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               52k
             </p>
@@ -379,11 +387,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Retweets
               </p>
@@ -395,7 +403,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               117
             </p>
@@ -413,11 +421,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Likes
               </p>
@@ -429,7 +437,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               507
             </p>
@@ -447,11 +455,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Likes
               </p>
@@ -463,7 +471,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               107
             </p>
@@ -481,11 +489,11 @@
             </div>
           </div>
           <div
-            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem]"
+            class="relative flex flex-col gap-[1.438rem] rounded-[5px] bg-[#F1F3FA] pl-6 pr-[1.938rem] pt-[1.625rem] pb-[1.188rem] transition-[background-color] duration-300 ease-in dark:bg-[#252B42]"
           >
             <div class="flex items-center justify-between">
               <p
-                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D]"
+                class="text-[0.875rem] font-bold leading-[1.063rem] tracking-normal text-[#63687D] transition-[color] duration-300 ease-in dark:text-[#8C98C6]"
               >
                 Likes
               </p>
@@ -497,7 +505,7 @@
               </svg>
             </div>
             <p
-              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29]"
+              class="text-[2rem] font-bold leading-[2.438rem] tracking-normal text-[#1D1F29] transition-[color] duration-300 ease-in dark:text-white"
             >
               1407
             </p>
@@ -517,5 +525,6 @@
         </div>
       </section>
     </main>
+    <script src="script.js"></script>
   </body>
 </html>
