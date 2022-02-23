@@ -971,3 +971,88 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(37 43 66 / var(--tw-bg-opacity));
 }
+
+@media (min-width: 1280px){
+  .xl\:mb-0{
+    margin-bottom: 0px;
+  }
+
+  .xl\:flex{
+    display: flex;
+  }
+
+  .xl\:hidden{
+    display: none;
+  }
+
+  .xl\:w-\[6\.875rem\]{
+    width: 6.875rem;
+  }
+
+  .xl\:w-\[69\.375rem\]{
+    width: 69.375rem;
+  }
+
+  .xl\:max-w-\[90rem\]{
+    max-width: 90rem;
+  }
+
+  .xl\:grid-cols-4{
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+
+  .xl\:items-center{
+    align-items: center;
+  }
+
+  .xl\:justify-center{
+    justify-content: center;
+  }
+
+  .xl\:justify-between{
+    justify-content: space-between;
+  }
+
+  .xl\:gap-\[13px\]{
+    gap: 13px;
+  }
+
+  .xl\:gap-\[0\.813rem\]{
+    gap: 0.813rem;
+  }
+
+  .xl\:gap-\[1\.875rem\]{
+    gap: 1.875rem;
+  }
+
+  .xl\:gap-\[40\.375rem\]{
+    gap: 40.375rem;
+  }
+
+  .xl\:gap-6{
+    gap: 1.5rem;
+  }
+
+  .xl\:gap-x-\[1\.875rem\]{
+    -moz-column-gap: 1.875rem;
+         column-gap: 1.875rem;
+  }
+
+  .xl\:gap-y-6{
+    row-gap: 1.5rem;
+  }
+
+  .xl\:px-\[10\.313rem\]{
+    padding-left: 10.313rem;
+    padding-right: 10.313rem;
+  }
+
+  .xl\:px-0{
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .xl\:pb-\[9\.625rem\]{
+    padding-bottom: 9.625rem;
+  }
+}
