@@ -936,6 +936,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.peer:hover ~ .peer-hover\:bg-gradient-to-tr{
+  background-image: linear-gradient(to top right, var(--tw-gradient-stops));
+}
+
+.peer:hover ~ .peer-hover\:from-\[\#40DB82\]{
+  --tw-gradient-from: #40DB82;
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to, rgb(64 219 130 / 0));
+}
+
+.peer:hover ~ .peer-hover\:to-\[\#388FE7\]{
+  --tw-gradient-to: #388FE7;
+}
+
 .dark .dark\:border-\[\#333A55\]{
   --tw-border-opacity: 1;
   border-color: rgb(51 58 85 / var(--tw-border-opacity));
@@ -972,9 +985,23 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(37 43 66 / var(--tw-bg-opacity));
 }
 
+.dark .peer:hover ~ .dark\:before\:peer-hover\:bg-\[\#333A55\]::before{
+  content: var(--tw-content);
+  --tw-bg-opacity: 1;
+  background-color: rgb(51 58 85 / var(--tw-bg-opacity));
+}
+
 @media (min-width: 1280px){
   .xl\:mb-0{
     margin-bottom: 0px;
+  }
+
+  .xl\:mt-\[-6\.75rem\]{
+    margin-top: -6.75rem;
+  }
+
+  .xl\:mb-\[4\.688rem\]{
+    margin-bottom: 4.688rem;
   }
 
   .xl\:flex{
@@ -1054,5 +1081,13 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:pb-\[9\.625rem\]{
     padding-bottom: 9.625rem;
+  }
+
+  .xl\:text-\[1\.75rem\]{
+    font-size: 1.75rem;
+  }
+
+  .xl\:leading-\[2\.125rem\]{
+    line-height: 2.125rem;
   }
 }
